@@ -1,0 +1,283 @@
+/* ===== GLOBAL STYLE ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background: #0B5D1E;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.nav-links a{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover{
+    color: #FFD700;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    height: 85vh;
+    background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+                      url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text{
+    color: white;
+    max-width: 600px;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 25px;
+    background: #FFD700;
+    color: black;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: #e6c200;
+}
+/* ================= PRODUCTS ================= */
+
+.products-section{
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#14532d;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:35px;
+}
+
+.search-box input{
+    width:350px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px 0 0 5px;
+}
+
+.search-box button{
+    padding:12px 20px;
+    background:#14532d;
+    color:white;
+    border:none;
+    border-radius:0 5px 5px 0;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    padding:15px;
+    color:#222;
+}
+
+.price{
+    color:#0B5D1E;
+    font-size:22px;
+    font-weight:bold;
+    padding:0 15px 15px;
+}
+
+.buy-btn{
+    display:block;
+    text-align:center;
+    background:#FFD700;
+    color:black;
+    padding:14px;
+    font-weight:bold;
+}
+
+.buy-btn:hover{
+    background:#e6c200;
+}
+/* ================= LOGO ================= */
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-img{
+width:55px;
+height:55px;
+border-radius:50%;
+}
+
+.logo-area h2{
+color:#FFD700;
+}
+
+.logo-area small{
+color:white;
+}
+
+/* ================= CATEGORIES ================= */
+
+.category-section{
+padding:60px 0;
+background:white;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.cat{
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.cat:hover{
+transform:translateY(-5px);
+}
+
+.cat img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+padding:70px 0;
+background:#eef7ef;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-img{
+width:100%;
+border-radius:10px;
+}
+
+.about h2{
+color:#14532d;
+margin-bottom:20px;
+}
+
+.about p{
+line-height:30px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#14532d;
+color:white;
+margin-top:60px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+padding:50px 0;
+}
+
+.footer-grid h3{
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.copyright{
+background:#0b3d1f;
+text-align:center;
+padding:15px;
+}
